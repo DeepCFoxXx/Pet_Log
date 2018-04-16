@@ -25,4 +25,16 @@ var handleButtonClick = function () {
   localStorage.setItem('pet', jsonString);
 }
 
+var app = function () {
+  var button = document.querySelector('button');
+  button.addEventListener('click', handleButtonClick);
+
+  var jsonString = localStorage.getItem('pet');
+  var savedPet = JSON.parse(jsonString);
+
+  if (!savedPet) return;
+  setDefinitionText('#name-display', savedPet.name);
+  setDefinitionText('#species-display', savedPet.species);
+}
+
 window.addEventListener('load', app);
