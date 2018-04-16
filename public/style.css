@@ -9,3 +9,16 @@ dt::after {
 input {
   display: block;
 }
+
+body {
+  font-family: sans-serif;
+  background-image: url("http://i.imgur.com/ObMic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+h1 {
+  text-decoration: underline;
+  text-align: center;
+}
